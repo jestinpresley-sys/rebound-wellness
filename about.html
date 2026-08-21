@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Simone | The Rebound Wellness</title>
+<meta name="description" content="Meet Simone Deloach — Texan, auntie, retired athlete, and the therapist and life coach behind Rebound Wellness.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav__row">
+    <a href="index.html" class="nav__mark">
+      <span class="nav__badge">R</span>
+      <span class="nav__word">Rebound Wellness<span>Round Rock, TX</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="is-active">About</a>
+      <a href="services.html">Services</a>
+      <a href="work-with-me.html">Work With Me</a>
+      <a href="find-me.html">Find Me</a>
+    </div>
+    <div class="nav__right">
+      <a href="work-with-me.html" class="btn btn--ghost-dark btn--small">Book a Consult</a>
+      <button class="nav__burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="is-active">About</a>
+  <a href="services.html">Services</a>
+  <a href="work-with-me.html">Work With Me</a>
+  <a href="find-me.html">Find Me</a>
+</div>
+
+<header class="page-hero">
+  <svg class="page-hero__corner" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+    <path d="M10,110 C 30,40 90,20 112,60" stroke="#E0B65C" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 8" stroke-linecap="round"/>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow eyebrow--gold">About</div>
+    <h1>Texan. Auntie. Retired athlete. Therapist.</h1>
+    <p>A little about the person on the other side of the couch — and why this practice looks the way it does.</p>
+  </div>
+</header>
+
+<section class="bio">
+  <div class="wrap bio__grid">
+    <div class="bio__badge" aria-hidden="true">SD</div>
+    <div>
+      <h2 class="bio__name">My name is Simone Deloach</h2>
+      <p>I'm a Texan, an auntie, an ice-cream enthusiast, and a roller skater who spent years competing as a professional athlete before I ever sat in a therapist's chair. Now I get to be a Therapist and a Life Coach — and all of the above still shows up in how I work.</p>
+      <div class="bio__chips">
+        <span class="bio__chip">Texan</span>
+        <span class="bio__chip">Auntie</span>
+        <span class="bio__chip">Retired pro athlete</span>
+        <span class="bio__chip">Ice cream enthusiast</span>
+        <span class="bio__chip">Roller skater</span>
+      </div>
+      <div class="bio__social">
+        <a href="https://podcasts.apple.com/us/podcast/postgame-with-simone/id1565043404" target="_blank" rel="noopener">Podcast</a>
+        <a href="https://www.linkedin.com/in/simone-deloach-lmft-a-lcdc-1b134569/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/thereboundwellness/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="goal-panel">
+      <div class="goal-panel__grid">
+        <div>
+          <div class="eyebrow eyebrow--gold">Our Goal</div>
+          <h3>I bring my training. You bring your story. We work the plan together.</h3>
+          <p>My job as your therapist or life coach is to pair your lived experience with my expertise and point it toward where you actually want to go. With your willingness and the accountability we build into our work, the goal is to leave you with tools you can keep using long after our sessions end.</p>
+        </div>
+        <a href="services.html" class="btn btn--gold">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter" id="newsletterWrap">
+  <div class="wrap newsletter__inner">
+    <div class="eyebrow eyebrow--moss eyebrow--center">Join the PostGame Blog</div>
+    <h2>Be the first to hear what's new in mental health.</h2>
+    <p>Occasional notes from Simone on therapy, life coaching, and working with athletes — no spam, unsubscribe any time.</p>
+    <form class="newsletter__form" id="newsletterForm">
+      <input type="email" placeholder="you@email.com" required aria-label="Email address">
+      <button type="submit" class="btn btn--gold btn--small">Sign up</button>
+    </form>
+    <p class="newsletter__note" id="newsletterNote">Thanks for signing up!</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer__row">
+    <div class="footer__fine">© <span id="year"></span> The Rebound Wellness · Round Rock, TX</div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="work-with-me.html">Work With Me</a>
+      <a href="find-me.html">Find Me</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
