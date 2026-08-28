@@ -253,6 +253,18 @@ section{ padding: 108px 0; }
 .tl-item__title{ font-family: var(--font-display); font-size:21px; font-weight:600; margin-bottom:8px; }
 .tl-item__body{ color:#4a4636; max-width: 620px; font-size:15.5px; }
 
+/* ---------- ACTION PHOTO (full-bleed) ---------- */
+.action-photo{ position:relative; height: min(78vh, 640px); overflow:hidden; padding:0; }
+.action-photo img{ width:100%; height:100%; object-fit:cover; object-position: 50% 38%; display:block; }
+.action-photo::after{
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(to top, rgba(16,26,21,0.6), transparent 45%);
+  pointer-events:none;
+}
+.action-photo__caption{
+  position:absolute; left:32px; bottom:24px; z-index:2; color: var(--gold-bright);
+}
+
 /* ---------- QUOTE ---------- */
 .quote-band{
   background: var(--court-deep); color: var(--bone);
@@ -443,6 +455,8 @@ footer{ background: var(--court-deep); color: rgba(246,241,230,0.55); padding: 4
 @media (max-width: 560px){
   .wrap{ padding:0 22px; }
   section{ padding: 78px 0; }
+  .action-photo{ height: 46vh; }
+  .action-photo__caption{ left:22px; bottom:18px; }
   .hero{ padding:150px 0 90px; }
   .page-hero{ padding:140px 0 64px; }
   .form-row{ grid-template-columns:1fr; }
