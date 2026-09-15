@@ -344,6 +344,7 @@ section{ padding: 108px 0; }
 .spotlight__title{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:14px; }
 .spotlight__title h3{ margin-bottom:0; }
 .spotlight__logo{ height:28px; width:auto; display:block; }
+.spotlight__logo--micr{ height:44px; }
 
 /* ---------- NOTICE CARD (full Good Faith Estimate section) ---------- */
 .notice{ background: var(--bone); }
