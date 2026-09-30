@@ -447,6 +447,40 @@ section{ padding: 108px 0; }
 .form-note.is-visible{ display:block; }
 .form-panel.is-sent form{ display:none; }
 
+/* ---------- INSURANCE CLOUD (floating logo chips) ---------- */
+.insurance-cloud{ background: var(--bone-dim); }
+.insurance-float{
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap: 46px 60px; margin-top: 56px; padding: 24px 0 8px;
+}
+.insurance-chip{
+  height: var(--chip-h, 70px); background: var(--bone); border:1px solid var(--line-on-light); border-radius: 16px;
+  padding: 0 24px; display:flex; align-items:center; justify-content:center;
+  animation: insurance-bob var(--bob-dur, 4.5s) ease-in-out infinite,
+             insurance-pulse var(--pulse-dur, 5s) ease-in-out infinite;
+  will-change: translate, scale;
+}
+.insurance-chip img{ display:block; height:100%; width:auto; max-width: 100%; object-fit:contain; }
+
+.insurance-chip:nth-child(1){ --chip-h:46px; max-width:170px; --bob-dur:4.3s; --pulse-dur:5.7s; animation-delay: 0s, -1s; }
+.insurance-chip:nth-child(2){ --chip-h:132px; max-width:180px; --bob-dur:5.2s; --pulse-dur:4.4s; animation-delay: -1.4s, -2.3s; }
+.insurance-chip:nth-child(3){ --chip-h:32px; max-width:280px; --bob-dur:3.8s; --pulse-dur:6.1s; animation-delay: -2.6s, -0.5s; }
+.insurance-chip:nth-child(4){ --chip-h:72px; max-width:150px; --bob-dur:4.7s; --pulse-dur:5.1s; animation-delay: -0.8s, -3.1s; }
+.insurance-chip:nth-child(5){ --chip-h:90px; max-width:150px; --bob-dur:5.5s; --pulse-dur:4.9s; animation-delay: -3.3s, -1.6s; }
+.insurance-chip:nth-child(6){ --chip-h:38px; max-width:250px; --bob-dur:4.0s; --pulse-dur:5.4s; animation-delay: -1.9s, -2.8s; }
+
+@keyframes insurance-bob{
+  0%, 100%{ translate: 0 0; }
+  50%{ translate: 0 -10px; }
+}
+@keyframes insurance-pulse{
+  0%, 100%{ scale: 1; }
+  50%{ scale: 1.1; }
+}
+@media (prefers-reduced-motion: reduce){
+  .insurance-chip{ animation: none; }
+}
+
 /* ---------- CTA BAND (generic, used on interior pages) ---------- */
 .cta-band{ background: var(--bone-dim); padding: 80px 0; text-align:center; }
 .cta-band h2{ font-size: clamp(26px,3vw,36px); margin-top:14px; }
@@ -484,6 +518,14 @@ footer{ background: var(--court-deep); color: rgba(246,241,230,0.55); padding: 4
   .wrap{ padding:0 22px; }
   section{ padding: 78px 0; }
   .journey__photo{ height: 220px; }
+  .insurance-float{ gap: 26px 20px; margin-top:40px; }
+  .insurance-chip{ padding:0 16px; }
+  .insurance-chip:nth-child(1){ --chip-h:34px; max-width:130px; }
+  .insurance-chip:nth-child(2){ --chip-h:88px; max-width:120px; }
+  .insurance-chip:nth-child(3){ --chip-h:24px; max-width:200px; }
+  .insurance-chip:nth-child(4){ --chip-h:50px; max-width:110px; }
+  .insurance-chip:nth-child(5){ --chip-h:60px; max-width:100px; }
+  .insurance-chip:nth-child(6){ --chip-h:28px; max-width:180px; }
   .quote-slide{ padding:0 30px; }
   .quote-arrow{ width:32px; height:32px; font-size:17px; left:-2px; }
   .quote-arrow--next{ right:-2px; left:auto; }
